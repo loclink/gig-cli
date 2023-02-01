@@ -10,9 +10,9 @@
     "gig": "dist/main.js"
   },
   "scripts": {
-    "dev": "tsup  --watch",
+    "dev": "pnpm link --global && tsup  --watch",
     "build": "tsc && tsup",
-    "release": "npm run build && dotenv release-it"
+    "release": "dotenv release-it"
   },
   "keywords": [
     "cli",
