@@ -1,5 +1,6 @@
+import fs from 'fs-extra';
 import { defineConfig } from 'tsup';
-
+import { resolve } from 'path';
 export default defineConfig({
   entry: ['lib/main.ts'],
   format: ['cjs'],
@@ -7,5 +8,17 @@ export default defineConfig({
   platform: 'node',
   bundle: true,
   clean: true,
-  watch: true,
+  esbuildPlugins: [
+    {
+      name: 'CopyTemplate',
+      setup(build) {
+        build.onEnd(() => {
+          fs.copySync(resolve(__dirname, './lib/template'), resolve(__dirname, 'dist/template'));
+        });
+      }
+    }
+  ]
+  // dts: true,
+  // watch: true,
+  // treeshake: true,
 });
