@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.2](https://github.com/loclink/gig-cli/compare/v0.0.1...v0.0.2) (2023-02-01)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复了打包后版本与生产环境不一致的问题 ([74d4e1b](https://github.com/loclink/gig-cli/commit/74d4e1b611d534f7f6f0b04e88f7dfb17029dba0))
+
 ### 0.0.1 (2023-02-01)
 
 
