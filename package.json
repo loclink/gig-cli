@@ -1,0 +1,30 @@
+{
+  "name": "gig-cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gig": "dist/main.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "cli",
+    ".gitignore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "esbuild": "^0.17.5",
+    "tslib": "^2.5.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.5"
+  }
+}
