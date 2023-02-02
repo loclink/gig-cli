@@ -1,6 +1,6 @@
 # gig-cli
 
-A command line tool for you to quickly create `.gitignore` files
+A command line tool for you to quickly create `.gitignore` files.
 
 ## Features:
 
@@ -17,15 +17,15 @@ npm install gig-cli -g
 
 ### Use:
 
-- Create `.gitignore` for current working path.
+- Create `.gitignore` for current working path:
 
 ```shell
 gig
 ```
 
-![](https://raw.githubusercontent.com/loclink/picgo-images/master/images202302021752715.gif?token=AZN65Z245UHQJ2Z7C25CNJ3D3OEBI)
+![](https://raw.githubusercontent.com/mihu915/picgo-images/master/images202302021821942.gif)
 
-- View help to learn more
+- View help to learn more:
 
 ```shell
 ➜  gig-cli git:(master) gig -h
