@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.4](https://github.com/loclink/gig-cli/compare/v0.2.3...v0.2.4) (2023-02-02)
+
+
+### ✨ Features | 新功能
+
+* 移除了django模板，新增C和C++模板 ([68db39c](https://github.com/loclink/gig-cli/commit/68db39c351c7b01c9ccd2787534b7a3d19cba64d))
+
 ### [0.2.3](https://github.com/loclink/gig-cli/compare/v0.2.2...v0.2.3) (2023-02-02)
 
 
