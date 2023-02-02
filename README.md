@@ -9,13 +9,12 @@ A command line tool for you to quickly create **.gitignore** files.
 - Out of the box, easy to use.
 - Ignore templates are provided for multiple language projects , currently supported:
 
-  | Template | Finish |
-  | -------- | ------ |
-  | node     | ✅     |
-  | java     | ✅     |
-  | python   | 🚧     |
-  | go       | 🚧     |
-  |  |  |
+  | Template | Support |
+  | -------- | ------- |
+  | node     | ✅      |
+  | java     | ✅      |
+  | python   | 🚧      |
+  | go       | 🚧      |
 
 ## 🌈 Start:
 
@@ -24,8 +23,6 @@ A command line tool for you to quickly create **.gitignore** files.
 ```shell
 npm install gig-cli -g
 ```
-
-:point_down:
 
 ### Usage:
 
