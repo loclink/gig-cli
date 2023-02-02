@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/loclink/gig-cli/compare/v0.0.2...v0.1.0) (2023-02-02)
+
+
+### ✨ Features | 新功能
+
+* 不在git仓库时提供初始化选项 ([e67ffe3](https://github.com/loclink/gig-cli/commit/e67ffe3d85bf2fd363e9ea170e6eddb4452c24a2))
+
 ### [0.0.2](https://github.com/loclink/gig-cli/compare/v0.0.1...v0.0.2) (2023-02-01)
 
 
