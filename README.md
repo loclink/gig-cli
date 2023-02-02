@@ -1,13 +1,23 @@
 # gig-cli
 
-A command line tool for you to quickly create `.gitignore` files.
+![](https://img.shields.io/badge/node-%3E%3D14.0.0-green) ![npm](https://img.shields.io/npm/dt/gig-cli) ![npm](https://img.shields.io/npm/v/gig-cli?label=version)
 
-## Features:
+A command line tool for you to quickly create **.gitignore** files.
+
+## ✨ Features:
 
 - Out of the box, easy to use.
-- Ignore templates are provided for multiple language projects, currently supported: `node`、`java`.
+- Ignore templates are provided for multiple language projects , currently supported:
 
-## Start:
+  | Template | Finish |
+  | -------- | ------ |
+  | node     | ✅     |
+  | java     | ✅     |
+  | python   | 🚧     |
+  | go       | 🚧     |
+  |  |  |
+
+## 🌈 Start:
 
 ### Install:
 
@@ -15,7 +25,9 @@ A command line tool for you to quickly create `.gitignore` files.
 npm install gig-cli -g
 ```
 
-### Use:
+:point_down:
+
+### Usage:
 
 - Create `.gitignore` for current working path:
 
@@ -38,6 +50,6 @@ Options:
   -h, --help     display help for command
 ```
 
-## License:
+## 📃 License:
 
-[MIT](https://github.com/loclink/gig-cli/blob/master/license)
+license: [MIT](https://github.com/loclink/gig-cli/blob/master/license)

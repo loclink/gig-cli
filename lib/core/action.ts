@@ -3,19 +3,21 @@ import prompts from 'prompts';
 import chalk from 'chalk';
 import { copyFileSync } from 'fs-extra';
 import { resolve } from 'path';
-import { fileExists } from '@/utils';
+import { exitProcess, fileExists, gitInitialization } from '@/utils';
 
 const createGitIgnoreAction = async () => {
   if (!isGit()) {
     const doubtResponse = await prompts({
       name: 'value',
       type: 'toggle',
-      message: chalk.yellow('🔔 The current work path does not belong to the Git repository, want to continue?'),
+      message: chalk.yellow('🔔 The current work path does not belong to the Git repository, want to initialize?'),
       initial: true,
       active: 'yes',
-      inactive: 'no'
+      inactive: 'no',
+      onState: exitProcess
     });
-    if (!doubtResponse.value) process.exit();
+
+    if (doubtResponse.value) await gitInitialization();
   }
 
   const selectResponse = await prompts({
@@ -25,13 +27,8 @@ const createGitIgnoreAction = async () => {
     choices: [
       { title: 'node', value: 'node' },
       { title: 'java', value: 'java' }
-    ]
-  }).then((res) => {
-    if (!res.value) {
-      console.log(chalk.yellow('Generate operation has been cancelled.'));
-      process.exit();
-    }
-    return res;
+    ],
+    onState: exitProcess
   });
 
   if (fileExists('.gitignore')) {
@@ -41,13 +38,8 @@ const createGitIgnoreAction = async () => {
       message: 'Current working directory already exists ignore files, want to cover?',
       initial: false,
       active: 'yes',
-      inactive: 'no'
-    }).then((res) => {
-      if (!res.value) {
-        console.log(chalk.yellow('Generate operation has been cancelled.'));
-        process.exit();
-      }
-      return res;
+      inactive: 'no',
+      onState: exitProcess
     });
     // const writeTypeResponse = await prompts({
     //   name: 'value',
@@ -76,7 +68,6 @@ const createGitIgnoreAction = async () => {
     //     break;
     // }
   }
-
   copyFileSync(resolve(__dirname, `./template/${selectResponse.value}.ignore`), resolve(process.cwd(), '.gitignore'));
   console.log(chalk.green('✅ Generate gitignore successfully!!'));
 };

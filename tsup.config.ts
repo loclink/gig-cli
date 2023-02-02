@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   entry: ['lib/main.ts'],
   format: ['cjs'],
-  target: 'node16',
+  target: 'node14',
   platform: 'node',
   bundle: true,
   clean: true,
