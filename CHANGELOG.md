@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/loclink/gig-cli/compare/v0.1.0...v0.2.0) (2023-02-02)
+
+
+### ✨ Features | 新功能
+
+* 新增了python的.gitignore模板 ([e097069](https://github.com/loclink/gig-cli/commit/e097069687b91e157d6d5d80d6d7c4ef22308f26))
+
 ## [0.1.0](https://github.com/loclink/gig-cli/compare/v0.0.2...v0.1.0) (2023-02-02)
 
 
