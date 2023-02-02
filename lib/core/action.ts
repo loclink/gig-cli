@@ -3,7 +3,7 @@ import prompts from 'prompts';
 import chalk from 'chalk';
 import { copyFileSync } from 'fs-extra';
 import { resolve } from 'path';
-import { exitProcess, fileExists, gitInitialization } from '@/utils';
+import { exitProcess, fileExists, handleTemplateChoices, gitInitialization } from '@/utils';
 
 const createGitIgnoreAction = async () => {
   if (!isGit()) {
@@ -20,15 +20,11 @@ const createGitIgnoreAction = async () => {
     if (doubtResponse.value) await gitInitialization();
   }
 
-  const selectResponse = await prompts({
+  const templateResponse = await prompts({
     type: 'select',
     name: 'value',
     message: '📃 Please choose to ignore the template:',
-    choices: [
-      { title: 'node', value: 'node' },
-      { title: 'java', value: 'java' },
-      { title: 'python', value: 'python' }
-    ],
+    choices: handleTemplateChoices(),
     onState: exitProcess
   });
 
@@ -69,7 +65,7 @@ const createGitIgnoreAction = async () => {
     //     break;
     // }
   }
-  copyFileSync(resolve(__dirname, `./template/${selectResponse.value}.ignore`), resolve(process.cwd(), '.gitignore'));
+  copyFileSync(resolve(__dirname, `./template/${templateResponse.value}`), resolve(process.cwd(), '.gitignore'));
   console.log(chalk.green('✅ Generate gitignore successfully!!'));
 };
 

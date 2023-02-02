@@ -1,10 +1,10 @@
 import chalk from 'chalk';
-import { pathExistsSync } from 'fs-extra';
+import fs from 'fs-extra';
 import { resolve } from 'path';
 import shell from 'shelljs';
 
 const fileExists = (fileName: string) => {
-  const isExists = pathExistsSync(resolve(process.cwd(), fileName));
+  const isExists = fs.pathExistsSync(resolve(process.cwd(), fileName));
   return isExists;
 };
 
@@ -38,4 +38,11 @@ const gitInitialization = () => {
   });
 };
 
-export { fileExists, exitProcess, gitExist, gitInitialization };
+const handleTemplateChoices = () => {
+  const templateList = fs.readdirSync(resolve(__dirname, './template'));
+  return templateList.map((item) => {
+    return { title: item.split('.')[0], value: item };
+  });
+};
+
+export { fileExists, exitProcess, gitExist, gitInitialization, handleTemplateChoices };

@@ -1,7 +1,7 @@
 {
   "name": "gig-cli",
   "version": "0.2.0",
-  "description": "",
+  "description": "A command line tool for you to quickly create gitignore file.",
   "main": "index.js",
   "files": [
     "dist"
