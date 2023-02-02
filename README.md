@@ -9,12 +9,13 @@ A command line tool for you to quickly create **.gitignore** file.
 - Out of the box, easy to use.
 - Ignore templates are provided for multiple language projects , currently supported:
 
-  | Template | Provide |
-  | -------- | ------- |
-  | node     | ✅      |
-  | java     | ✅      |
-  | python   | ✅      |
-  | go       | 🚧      |
+  | Template | describe                                                                        |
+  | -------- | ------------------------------------------------------------------------------- |
+  | empty    | empty template                                                                  |
+  | node     | support: `Nodejs`, `Vue`, `React`, `Vuepress`, `Nuxt.js`, `Next.js` and more... |
+  | java     | the java gitignore                                                              |
+  | python   | the python gitignore                                                            |
+  | go       | the go gitignore                                                                |
 
 ## 🌈 Start:
 
