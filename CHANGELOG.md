@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://github.com/loclink/gig-cli/compare/v0.2.1...v0.2.2) (2023-02-02)
+
+
+### ✨ Features | 新功能
+
+* 新增了go的忽略模板 ([0150507](https://github.com/loclink/gig-cli/commit/015050731a88e460eeeb6abdf546c7d62aeb868c))
+
 ### [0.2.1](https://github.com/loclink/gig-cli/compare/v0.2.0...v0.2.1) (2023-02-02)
 
 
