@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.3](https://github.com/loclink/gig-cli/compare/v0.2.2...v0.2.3) (2023-02-02)
+
+
+### ✨ Features | 新功能
+
+* 新增了django忽略模板 ([4d4589b](https://github.com/loclink/gig-cli/commit/4d4589b1944984efd5b2ab339696692546b72b40))
+
 ### [0.2.2](https://github.com/loclink/gig-cli/compare/v0.2.1...v0.2.2) (2023-02-02)
 
 
