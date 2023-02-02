@@ -33,7 +33,7 @@ npm install gig-cli -g
 gig
 ```
 
-![](https://raw.githubusercontent.com/mihu915/picgo-images/master/images202302021821942.gif)
+![](https://raw.githubusercontent.com/mihu915/picgo-images/master/images202302030125028.gif)
 
 - View help to learn more:
 
