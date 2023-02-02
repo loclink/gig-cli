@@ -14,12 +14,6 @@
     "build": "tsc && tsup",
     "release": "dotenv release-it"
   },
-  "keywords": [
-    "cli",
-    ".gitignore"
-  ],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.1.1",
     "@types/fs-extra": "^11.0.1",
@@ -44,5 +38,19 @@
   },
   "dependencies": {
     "shelljs": "^0.8.5"
-  }
+  },
+  "keywords": [
+    "cli",
+    ".gitignore"
+  ],
+  "author": "loclink",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loclink/gig-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loclink/gig-cli/issues"
+  },
+  "homepage": "https://github.com/loclink/gig-cli#readme"
 }
