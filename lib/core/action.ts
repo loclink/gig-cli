@@ -26,7 +26,8 @@ const createGitIgnoreAction = async () => {
     message: '📃 Please choose to ignore the template:',
     choices: [
       { title: 'node', value: 'node' },
-      { title: 'java', value: 'java' }
+      { title: 'java', value: 'java' },
+      { title: 'python', value: 'python' }
     ],
     onState: exitProcess
   });
