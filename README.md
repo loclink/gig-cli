@@ -16,7 +16,8 @@ A command line tool for you to quickly create **.gitignore** file.
   | java     | the java gitignore                                                              |
   | python   | the python gitignore                                                            |
   | go       | the go gitignore                                                                |
-  | django   | the django gitignore                                                            |
+  | C        | the C gitignore                                                                 |
+  | C++      | the C++ gitignore                                                               |
 
 ## 🌈 Start:
 
